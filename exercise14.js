@@ -8,7 +8,6 @@ function naikAngkot(arrPenumpang) {
     var rute = ['A', 'B', 'C', 'D', 'E', 'F'];
     var a = 0;
     var b = 0;
-    var biaya = 0;
     var final = [];
 
     for (i = 0; i < arrPenumpang.length; i++) {
@@ -26,7 +25,7 @@ function naikAngkot(arrPenumpang) {
             naikDari: arrPenumpang[i][1],
             tujuan: arrPenumpang[i][2],
             bayar: (b - a) * 2000
-        })
+        });
     }
     return final;
 }
